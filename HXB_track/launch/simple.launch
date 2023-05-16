@@ -1,0 +1,7 @@
+<launch>
+    <include file="$(find limo_base)/launch/limo_base.launch" />
+    <include file="$(find  realsense2_camera)/rs_camera.launch" />
+    <node name="follow_object" pkg="HXB_track" type="follow.py" output="screen" />
+    <node name="object_detect" pkg="HXB_track" type="object_detect.py" output="screen" />
+</launch>
+
